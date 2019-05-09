@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const database = 'http://localhost:3001/persons'
+const database = 'http://localhost:3001/api/persons'
 
 const getAll = () => {
   const request = axios.get(database)
@@ -13,12 +13,12 @@ const create = newObject => {
 }
 
 const update = (id, newObject) => {
-  const request = axios.put(`${database}/${id}`, newObject)
+  const request = axios.put(`${database}/${id}/update`, newObject)
   return request.then(response => response.data)
 }
 
 const remove = (id) => {
-  const request = axios.delete(`${database}/${id}`)
+  const request = axios.delete(`${database}/${id}/delete`)
   return request.then(response => response.data)
 }
 

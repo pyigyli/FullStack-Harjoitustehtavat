@@ -16,3 +16,6 @@
 - [Tehtävät 1-5, kurssitiedot & erillinen moduuli](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa2/kurssitiedot)
 - [Tehtävät 6-11 & 15-20, puhelinluettelo](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa2/puhelinluettelo)
 - [Tehtävät 12-14, maiden tiedot](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa2/maiden-tiedot)
+
+### [Osa 3](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa3):
+- [Tehtävät 1-8, puhelinluettelo](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa2/puhelinluettelo)
