@@ -18,5 +18,5 @@
 - [Tehtävät 12-14, maiden tiedot](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa2/maiden-tiedot)
 
 ### [Osa 3](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa3):
-- [Tehtävät 1-22, puhelinluettelo](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa2/puhelinluettelo)
+- [Tehtävät 1-22, puhelinluettelo](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa3/puhelinluettelo)
 - Osassa luotu HerokuApp: [https://pluettelo-palvelin.herokuapp.com/]
