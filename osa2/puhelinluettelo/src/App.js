@@ -107,7 +107,7 @@ const App = () => {
       .then(showMessage(`Lisättiin ${newName}`))
       .catch(error => showMessage(`Henkilön ${newName} luominen ei onnistunut`, true))
     } else if (window.confirm(`${newName} on jo luettelossa, korvataanko vanha numero uudella?`)) {
-      db.update(persons.findIndex(person => person.name === newName) + 1, {name: newName, number: newNumber})
+      db.update(persons.find(person => person.name === newName).id, {name: newName, number: newNumber})
       .then(showMessage(`Päivitettiin ${newName}`))
       .catch(error => showMessage(`Henkilöä ${newName} ei löytynyt`, true))
     }

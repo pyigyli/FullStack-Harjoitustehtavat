@@ -12,6 +12,8 @@ app.use(morgan(':method :url :status :res[content-length] - :response-time ms :p
 const cors = require('cors')
 app.use(cors())
 
+const mongodb = require('./mongomoduuli')
+
 let persons = [
   {
     id: 1,
@@ -40,38 +42,48 @@ app.get('/', (req, res) => {
 })
 
 app.get('/api/persons', (req, res) => {
-  res.json(persons)
+  mongodb.find({})
+    .then(persons => res.json(persons.map(person => person.toJSON())))
+    .catch(error => console.log(error.response.data))
 })
 
 app.post('/api/persons', (req, res) => {
-  const id = Math.floor(Math.random() * 10000)
-  const person = req.body
-  if (!person || !person.name || !person.number) {
+  const newPerson = req.body
+  if (newPerson.name.length < 3) {
+    return res.status(400).json({error: 'name must be at least 3 characters long'})
+  }
+  if (newPerson.number.length < 8) {
+    return res.status(400).json({error: 'number must be at least 8 characters long'})
+  }
+  if (!newPerson || !newPerson.name || !newPerson.number) {
     return res.status(400).json({error: 'both name and number are required'})
   }
-  if (persons.filter(person => person.id === id).length > 0) {
+  if (persons.filter(person => person.name === newPerson.name).length > 0) {
     return res.status(400).json({error: 'name must be unique'})
   }
-  person.id = id
-  persons = persons.concat(person)
-  res.json(person)
+  persons = persons.concat(newPerson)
+  mongodb.create(newPerson)
+    .catch(error => console.log(error.response.data))
 })
 
-app.get('/api/persons/:id', (req, res) => {
-  const id = Number(req.params.id)
-  const person = persons.find(person => person.id === id)
-  if (person) {
-    res.json(person)
-  } else {
-    res.status(404).end()
-  }
+app.get('/api/persons/:id', (req, res, next) => {
+  mongodb.findById(req.params.id).then(person => res.json(person))
+    .catch(error => next(error))
 })
 
-app.delete('/api/persons/:id/delete', (req, res) => {
-  const id = Number(req.params.id)
-  persons = persons.filter(person => person.id !== id)
-  res.status(204).end();
-});
+app.put('/api/persons/:id/update', (req, res, next) => {
+  const person = {name: req.body.name, number: req.body.number}
+  console.log(req.params.id)
+  mongodb.findByIdAndUpdate(req.params.id, person, {new: true})
+    .then(updatedPerson => res.json(updatedPerson.toJSON()))
+    .catch(error => next(error))
+})
+
+app.delete('/api/persons/:id/delete', (req, res, next) => {
+  mongodb.findByIdAndRemove(req.params.id)
+    .then(result => res.status(204).end())
+    .catch(error => next(error))
+})
 
 app.get('/info', (req, res) => {
   res.send(`
@@ -79,6 +91,12 @@ app.get('/info', (req, res) => {
     <p>${new Date()}</p>
   `)
 })
+
+const unknownEndpoint = (req, res) => res.status(404).send({error: 'unknown endpoint'})
+app.use(unknownEndpoint)
+
+const errorHandler = (err, req, res, next) => console.log(err)
+app.use(errorHandler)
 
 const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
