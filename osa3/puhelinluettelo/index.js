@@ -73,7 +73,6 @@ app.get('/api/persons/:id', (req, res, next) => {
 
 app.put('/api/persons/:id/update', (req, res, next) => {
   const person = {name: req.body.name, number: req.body.number}
-  console.log(req.params.id)
   mongodb.findByIdAndUpdate(req.params.id, person, {new: true})
     .then(updatedPerson => res.json(updatedPerson.toJSON()))
     .catch(error => next(error))
