@@ -1,0 +1,11 @@
+POST http://localhost:3003/api/blogs HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkRlbWlzMiIsImlkIjoiNWNkOTc0NjYyNDFiMTYxOWM4YmNjYjllIiwiaWF0IjoxNTU3NzU1MjU2fQ.tGIBe3kLSm8lCpQsrWkrZhStyQrQTX5-J_D5v5QsSAw
+
+{
+  "title": "Kaunis blogini",
+  "author": "Dimitri Demokäyttäjä2",
+  "url": "www.urli.com",
+  "likes": 0,
+  "userId": "5cd97466241b1619c8bccb9e"
+}

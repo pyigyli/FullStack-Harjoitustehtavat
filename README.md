@@ -20,3 +20,6 @@
 ### [Osa 3](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa3):
 - [Tehtävät 1-22, puhelinluettelo](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa3/puhelinluettelo)
 - Osassa luotu HerokuApp: [https://pluettelo-palvelin.herokuapp.com/]
+
+### [Osa 4](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa4):
+- [Tehtävät 1-21, blogilista](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa4/blogilista)
