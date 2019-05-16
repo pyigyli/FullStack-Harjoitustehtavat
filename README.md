@@ -23,3 +23,7 @@
 
 ### [Osa 4](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa4):
 - [Tehtävät 1-21, blogilista](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa4/blogilista)
+
+### [Osa 5](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa5):
+- [Tehtävät 1-20, blogilistan frontend](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa5/bloglist-frontend)
+- [Tehtävä 21, ultimate hooks](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa5/ultimate-hooks)
