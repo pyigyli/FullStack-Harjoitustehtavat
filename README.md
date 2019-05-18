@@ -27,3 +27,7 @@
 ### [Osa 5](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa5):
 - [Tehtävät 1-20, blogilistan frontend](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa5/bloglist-frontend)
 - [Tehtävä 21, ultimate hooks](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa5/ultimate-hooks)
+
+### [Osa 6](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa6):
+- [Tehtävät 1-2, unicafe revisited](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa6/unicafe-redux)
+- [Tehtävät 3-21, anekdootit](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa6/redux-anecdotes)
