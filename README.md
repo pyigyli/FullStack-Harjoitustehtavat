@@ -31,3 +31,8 @@
 ### [Osa 6](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa6):
 - [Tehtävät 1-2, unicafe revisited](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa6/unicafe-redux)
 - [Tehtävät 3-21, anekdootit](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa6/redux-anecdotes)
+
+### [Osa 7](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa7):
+- [Tehtävät 1-3, routed anecdotes](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa7/routed-anecdotes)
+- [Tehtävät 4-10 & 13-15, blogilistan laajennus](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa7/bloglist-frontend)
+- Tehtävän 20 vaatima kurssipalaute annettu
