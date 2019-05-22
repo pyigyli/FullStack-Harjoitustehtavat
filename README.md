@@ -36,3 +36,6 @@
 - [Tehtävät 1-3, routed anecdotes](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa7/routed-anecdotes)
 - [Tehtävät 4-10 & 13-15, blogilistan laajennus](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa7/bloglist-frontend)
 - Tehtävän 20 vaatima kurssipalaute annettu
+
+### [Osa 8](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa8):
+- Tehtävät 1-22, [library backend](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa8/library-backend) ja [library frontend](https://github.com/pyigyli/FullStack-Harjoitustehtavat/tree/master/osa8/library-frontend)
